@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Units - rem, em, vh, vw </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h2 class="display-2">CSS Units - rem, em, vh, vw</h2>
+    <div class="row">
+        <div class="col-md-2 p-0">
+            <div class="card">
+                <pre>
+*{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+html {
+    font-size: 12px;
+}
+
+pre {
+    font-size: 1em;
+    word-break: break-all;
+}
+
+.rem-box {
+    font-size: 12px; 
+    /* Applies 
+    only to 
+    h* tag */
+}
+
+.rem-box > p {
+    font-size: 2rem; 
+    /* Multiplies the 
+    base (html) 
+    size value; 
+    ex: 
+    10px * 2 = 20px */
+}
+
+.em-box {
+    font-size: 12px; 
+    /* Applies only 
+    to <h*> tag */
+}
+
+.em-box > p {
+    font-size: 3em; 
+    /* Multiplies the 
+    immediate parent 
+    (em-box) size value; 
+    ex: 
+    12px * 3 = 36px */
+}
+
+.row {
+    background-color: #007bff;
+    width: 80vw;
+    height: 100vh;
+}
+                </pre>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="card">
+                <div class="rem-box">
+                    <h2>rem</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti nemo dolor maiores ipsa obcaecati laudantium temporibus
+                        beatae ab delectus explicabo tempore dolorum ipsam consectetur, animi culpa aspernatur in libero
+                        mollitia impedit quidem error dolores. Rem nihil temporibus debitis! Sit cumque tempora debitis corporis,
+                        perspiciatis fugiat rem, natus blanditiis aut temporibus libero, quis eum incidunt illum maxime unde?
+                        Iste tempora minus expedita, tenetur est dolorem quasi deleniti tempore. Iusto fuga, provident amet
+                        ipsum fugiat molestias architecto asperiores voluptatem minus in impedit omnis velit blanditiis sit
+                        quia excepturi necessitatibus. Eius quia iusto repellat deleniti quibusdam, reiciendis recusandae
+                        quisquam nobis impedit tenetur ipsa eum soluta ullam, nesciunt quis doloribus odio dolorum consectetur
+                        provident reprehenderit placeat velit cupiditate voluptas quae. Dicta magnam mollitia expedita debitis
+                        nesciunt modi illum esse autem vel.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="card">
+                <div class="em-box">
+                    <h2>em</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti nemo dolor maiores ipsa obcaecati laudantium temporibus
+                        beatae ab delectus explicabo tempore dolorum ipsam consectetur, animi culpa aspernatur in libero
+                        mollitia impedit quidem error dolores. Rem nihil temporibus debitis! Sit cumque tempora debitis corporis,
+                        perspiciatis fugiat rem, natus blanditiis aut temporibus libero, quis eum incidunt illum maxime unde?
+                        Iste tempora minus expedita, tenetur est dolorem quasi deleniti tempore. Iusto fuga, provident amet
+                        ipsum fugiat molestias architecto asperiores voluptatem minus in impedit omnis velit blanditiis sit
+                        quia excepturi necessitatibus. Eius quia iusto repellat deleniti quibusdam, reiciendis recusandae
+                        quisquam nobis impedit tenetur ipsa eum soluta ullam, nesciunt quis doloribus odio dolorum consectetur
+                        provident reprehenderit placeat velit cupiditate voluptas quae. Dicta magnam mollitia expedita debitis
+                        nesciunt modi illum esse autem vel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

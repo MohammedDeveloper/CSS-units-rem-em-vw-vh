@@ -1,0 +1,50 @@
+*{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+html {
+    font-size: 12px;
+}
+
+pre {
+    font-size: 1em;
+    word-break: break-all;
+}
+
+.rem-box {
+    font-size: 12px; 
+    /* Applies 
+    only to 
+    h* tag */
+}
+
+.rem-box > p {
+    font-size: 2rem; 
+    /* Multiplies the 
+    base (html) 
+    size value; 
+    ex: 
+    10px * 2 = 20px */
+}
+
+.em-box {
+    font-size: 12px; 
+    /* Applies only 
+    to <h*> tag */
+}
+
+.em-box > p {
+    font-size: 3em; 
+    /* Multiplies the 
+    immediate parent 
+    (em-box) size value; 
+    ex: 
+    12px * 3 = 36px */
+}
+
+.row {
+    background-color: #007bff;
+    width: 80vw;
+    height: 100vh;
+}
